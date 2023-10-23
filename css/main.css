@@ -912,6 +912,10 @@ svg {
   width: 100%;
   opacity: 1;
 }
+.footer__inner-links a .svg {
+  width: 0.8em;
+  height: 0.8em;
+}
 .footer__inner-form {
   width: 100%;
   padding: 30px 0;
@@ -1303,9 +1307,6 @@ svg {
      object-fit: cover;
 }
 
-.flyer {
-  min-height: 55vh;
-}
 .flyer__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1319,6 +1320,7 @@ svg {
           align-items: center;
   text-align: center;
   gap: 10px;
+  min-height: 50vh;
 }
 .flyer__inner .logo {
   font-size: 23.5px;
@@ -1585,6 +1587,11 @@ svg {
     margin-top: 85px;
     height: calc(100vh - 85px);
     height: calc(100dvh - 85px);
+  }
+  .flyer__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 940px) {
