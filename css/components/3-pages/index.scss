@@ -6,11 +6,12 @@
   display: flex;
   flex-direction: column;
   padding: 40px 0 140px;
+  margin-top: 115px;
 
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: 75px;
+    gap: 15px;
     margin: auto;
     &-group {
       display: flex;
@@ -23,6 +24,7 @@
   }
   h1 {
     text-align: center;
+    margin-bottom: 0.9em;
   }
   .autoContainer {
     display: flex;
@@ -39,7 +41,6 @@
     &-row {
       display: flex;
       justify-content: space-between;
-      gap: 30px;
     }
     &-content {
       width: calc(56% - 15px);
@@ -199,6 +200,198 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 1.4;
+      }
+    }
+  }
+}
+
+@mixin index-1160 {
+  .hero {
+    margin-top: 100px;
+    height: calc(100vh - 100px);
+    height: calc(100dvh - 100px);
+  }
+  .about {
+    &__inner {
+      &-content {
+        width: calc(50% - 20px);
+      }
+      &-image {
+        width: 50%;
+      }
+    }
+  }
+  .service {
+    &__inner {
+      &-row {
+        gap: 20px 10px;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+      &-image {
+        width: calc(25% - 10px);
+        &._space {
+          display: none;
+        }
+      }
+      .box {
+        width: calc(75% - 10px);
+        padding-bottom: 2em;
+      }
+    }
+  }
+  .projects {
+    &__inner {
+      &-body {
+        margin: -16px -8px;
+        li {
+          width: calc(33.33% - 16px);
+          margin: 16px 8px;
+        }
+      }
+    }
+  }
+  .testimonials {
+    &__inner {
+      &-row {
+        margin: 0 -8px;
+      }
+    }
+    &__item {
+      width: calc(25% - 16px);
+      margin: 0 8px;
+    }
+  }
+}
+@mixin index-1025 {
+  .hero {
+    margin-top: 85px;
+    height: calc(100vh - 85px);
+    height: calc(100dvh - 85px);
+  }
+}
+@mixin index-940 {
+  .about {
+    &__inner {
+      &-row {
+        gap: 25px;
+        flex-direction: column;
+      }
+      &-content {
+        width: 100%;
+        max-width: 700px;
+      }
+      &-image {
+        width: 100%;
+        max-width: 600px;
+        order: -1;
+      }
+    }
+  }
+  .service {
+    &__inner {
+      &-image {
+        width: calc(33.33% - 10px);
+      }
+      .box {
+        width: calc(66.66% - 10px);
+      }
+    }
+  }
+  .testimonials {
+    &__inner {
+      &-row {
+        flex-wrap: wrap;
+        row-gap: 1em;
+      }
+    }
+    &__item {
+      width: calc(50% - 16px);
+    }
+  }
+}
+@mixin index-768 {
+  .hero {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    height: calc(100dvh - 80px);
+  }
+}
+@mixin index-580 {
+  .hero {
+    &__inner {
+      &-group {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+  }
+  .service {
+    &__inner {
+      gap: 25px;
+      &-row {
+        gap: 25px 20px;
+      }
+      &-image {
+        width: calc(50% - 10px);
+      }
+      .box {
+        width: 100%;
+        padding-bottom: 1em;
+      }
+    }
+  }
+  .projects {
+    &__inner {
+      &-header {
+        gap: 20px;
+      }
+      &-body {
+        margin: 0;
+        gap: 20px 16px;
+
+        li {
+          margin: 0;
+          width: calc(50% - 8px);
+        }
+      }
+    }
+  }
+  .testimonials {
+    &__inner {
+      &-row {
+        row-gap: 0.8em;
+      }
+    }
+    &__item {
+      width: 100%;
+    }
+  }
+}
+
+@mixin index-460 {
+  .hero {
+    margin-top: 65px;
+    height: calc(100vh - 65px);
+    height: calc(100dvh - 65px);
+  }
+  .service {
+    &__inner {
+      &-row {
+        gap: 16px 12px;
+      }
+      &-image {
+        width: calc(50% - 6px);
+      }
+    }
+  }
+  .projects {
+    &__inner {
+      &-body {
+        gap: 16px 12px;
+        li {
+          width: calc(50% - 6px);
+        }
       }
     }
   }

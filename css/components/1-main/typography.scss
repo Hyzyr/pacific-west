@@ -65,3 +65,83 @@ p {
     font-weight: 700;
   }
 }
+
+@mixin typography-1160 {
+  h1 {
+    font-size: 58px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 34px;
+  }
+}
+@mixin typography-1025 {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+}
+@mixin typography-768 {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 18px;
+    &._sm {
+      font-size: 16px;
+    }
+  }
+}
+@mixin typography-580 {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+}
+@mixin typography-460 {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+    &._sm {
+      font-size: 14px;
+    }
+  }
+}
