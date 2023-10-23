@@ -1,46 +1,39 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  min-height: 100%;
-  padding-top: 118px;
-}
-.autoContainer {
-  max-width: 1360px;
-  margin: 0 auto;
-  padding: 0 60px;
-}
 .input {
   display: flex;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
 
   input,
   textarea,
   &__selected {
-    padding: 1.2em 1.9em;
-    border-radius: 2em;
+    padding: 0.4em 0.2em;
+    border-radius: 0;
     width: 100%;
-    background-color: $white;
-    border: 2px solid $white;
+    background-color: $black;
+    border-bottom: 2px solid $black-2;
     resize: none;
     transition: 0.3s ease-out;
 
     //font
-    color: $black;
+    color: $white;
     font-family: $font-primary;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: inherit;
-    line-height: 1;
+    line-height: 1.2;
+
     &::placeholder {
-      color: rgba($black, 0.4);
+      color: $white;
+      transition: 0.3s ease-out;
     }
   }
   input:focus,
   textarea:focus {
-    color: $secondary;
-    border-color: rgba($black, 0.8);
+    color: $black-primary;
+    border-color: rgba($white, 0.8);
+    &::placeholder {
+      color: rgba($white, 0.4);
+    }
   }
   &--primary {
     input {
@@ -49,9 +42,9 @@
       box-shadow: 0px 1em 1.3em rgba($black, 0.22);
       border-radius: 25;
       &:focus {
-        color: $secondary;
-        border-color: $secondary;
-        // background: $secondary;
+        color: $black-primary;
+        border-color: $black-primary;
+        // background: $black-primary;
       }
     }
   }
@@ -185,29 +178,62 @@
 }
 .button {
   cursor: pointer;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.89em 2.28em;
   border: 1px solid transparent;
+  background-color: $black;
 
-  color: $black;
+  color: $white;
   font-family: $font-primary;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1;
   transition: all 0.3s ease;
 
+  &:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    transform: translate(-50%, -50%);
+    transition: 0.3s cubic-bezier(0.15, 0.27, 0.06, 0.92);
+    opacity: 0;
+  }
+  span {
+    color: inherit;
+    transition: 0.3s ease-in;
+  }
   &--primary {
+    color: $black;
     background: $white;
-    &._black {
-      background-color: $black;
-      color: $white;
+  }
+  &--muted {
+    color: $white;
+    background: $black-2;
+  }
+  &:hover {
+    span {
+      opacity: 0.9;
+    }
+    &:after {
+      opacity: 1;
+      width: calc(100% - 4px);
     }
   }
   &:active {
     opacity: 0.7;
+    &:after {
+      width: 2em;
+      transition-duration: 0.14s;
+    }
   }
   &:disabled {
     cursor: default;
@@ -216,7 +242,7 @@
 }
 .ratioImage {
   position: relative;
-  padding-bottom:70%;
+  padding-bottom: 70%;
   width: 100%;
 
   img {
@@ -234,7 +260,7 @@
   }
 }
 .badge {
-  background: $secondary;
+  background: $black-primary;
   border-radius: 100px;
   padding: 0.3em 0.5em;
 
@@ -501,59 +527,17 @@
 .noBreak {
   white-space: nowrap;
 }
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.logo {
+  font-size: 20px;
+  width: 7em;
+  height: 4em;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1;
-  pointer-events: none;
+
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
-}
-.logo {
-  font-size: 18px;
-  width: 7.77em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  img {
-    width: 100%;
     object-fit: contain;
   }
-}
-.text {
-  &--secondary {
-    font-family: $font-secondary;
-  }
-  &--title {
-    font-family: $font-title;
-  }
-  &--light {
-    font-weight: 300;
-  }
-  &--regular {
-    font-weight: 400;
-  }
-  &--medium {
-    font-weight: 500;
-  }
-  &--semiBold {
-    font-weight: 600;
-  }
-  &--bold {
-    font-weight: 700;
-  }
-}
-.box {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
 }
