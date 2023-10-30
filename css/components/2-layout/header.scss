@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -23,15 +23,20 @@
       &:hover {
         opacity: 0.85;
       }
+      .logo {
+        transition: 0.3s ease-in-out;
+      }
     }
   }
 
   &.sticky {
-    // position: fixed;
-    // padding: 20px 0;
-    // border-bottom: 1px solid rgba($black-primary, 0.4);
-    // animation: 0.3s sticky ease-in;
-    // transition-duration: 0.5s;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba($white, 0.2);
+    transition-duration: 0.5s;
+
+    .logo {
+      font-size: 14px;
+    }
   }
 }
 .nav {
@@ -82,6 +87,7 @@
           width: 80%;
         }
       }
+     
     }
   }
 }
@@ -143,7 +149,31 @@
     }
   }
 }
+.anchor {
+  opacity: 0;
+  position: relative;
+  top: -200px;
+}
 
+@mixin header-min-1025 {
+  .header.sticky {
+    .nav {
+      &__inner {
+        &-link {
+          color: rgba($white, 0.6);
+          &.active {
+            color: $white;
+    
+            &:after {
+              opacity: 0.8;
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @mixin header-1160 {
   .header {
     padding: 15px 0;
@@ -219,11 +249,18 @@
           width: 2px;
           height: 80%;
           transform: translateY(-50%);
+          opacity: 0;
         }
 
+        &.active {
+          &:after {
+            opacity: 1;
+          }
+        }
         &:hover {
           color: $black-primary;
           &:after {
+            opacity: 1;
             width: 2px;
             height: 100%;
           }

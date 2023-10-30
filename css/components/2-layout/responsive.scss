@@ -10,6 +10,9 @@
   @include typography-1160;
   @include index-1160;
 }
+@media (min-width: 1025px) {
+  @include header-min-1025;
+}
 @media (max-width: 1025px) {
   .autoContainer {
     padding: 0 30px;
