@@ -12,7 +12,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
     z-index: 2;
     justify-content: space-between;
     .burger {
@@ -40,11 +40,32 @@
   }
 }
 .nav {
+  flex-grow: 1;
+  max-width: 960px;
+
   &__inner {
-    display: flex;
     width: 100%;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
+
+    &-license {
+      color: $white;
+      font-family: $font-primary;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
     &-link {
       cursor: pointer;
       position: relative;
@@ -87,7 +108,6 @@
           width: 80%;
         }
       }
-     
     }
   }
 }
@@ -152,7 +172,10 @@
 .anchor {
   opacity: 0;
   position: relative;
-  top: -200px;
+  top: -120px;
+  &--higher {
+    top: -320px;
+  }
 }
 
 @mixin header-min-1025 {
@@ -163,7 +186,7 @@
           color: rgba($white, 0.6);
           &.active {
             color: $white;
-    
+
             &:after {
               opacity: 0.8;
               width: 90%;
@@ -174,15 +197,40 @@
     }
   }
 }
-@mixin header-1160 {
+@mixin header-1280 {
   .header {
-    padding: 15px 0;
-
     &__inner {
+      gap: 40px;
+
       &-logo {
         .logo {
           font-size: 18px;
         }
+      }
+    }
+  }
+  .nav {
+    max-width: 860px;
+  }
+}
+@mixin header-1160 {
+  .header {
+    padding: 15px 0;
+    &__inner {
+      &-logo {
+        .logo {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .nav {
+    &__inner {
+      &-license {
+        font-size: 12px;
+      }
+      &-links {
+        gap: 10px;
       }
     }
   }
@@ -221,6 +269,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0s ease 0.25s, opacity 0.2s ease-in-out 0s;
+    max-width: unset;
 
     &__inner {
       position: absolute;
@@ -229,9 +278,9 @@
       width: 35%;
       min-width: 280px;
       height: 100%;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: flex-start;
-      justify-content: flex-start;
+      justify-content: space-between;
       box-sizing: border-box;
       background: $white;
       box-shadow: 0px 4px 24px -1px rgba($black, 0.2);
@@ -240,6 +289,15 @@
       opacity: 0;
       transition: 0.15s ease-in-out 0s;
 
+      &-links {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      &-license {
+        font-size: 14px;
+        color: $black;
+      }
       &-link {
         color: $black;
 
@@ -281,8 +339,19 @@
       }
     }
   }
+  .anchor {
+    top: -100px;
+    &--higher {
+      top: -220px;
+    }
+  }
 }
 
+@mixin header-940 {
+  .anchor {
+    top: -90px;
+  }
+}
 @mixin header-768 {
   .header {
     &__inner {
@@ -292,6 +361,9 @@
         }
       }
     }
+  }
+  .anchor {
+    top: -80px;
   }
 }
 @mixin header-460 {

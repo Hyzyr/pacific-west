@@ -29,6 +29,12 @@ if (header)
     }
   });
 
+//close menu on nav click
+document.querySelectorAll("a.nav__inner-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMenu();
+  });
+});
 ///
 ///
 ///WOW JS

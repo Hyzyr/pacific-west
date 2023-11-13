@@ -13,7 +13,7 @@
     />
     <link rel="icon" href="./images/logo-small.png" />
     <title>Pacific West</title>
-  </head>
+  </head>+
 
   <body>
     <div class="main">
@@ -28,12 +28,17 @@
             </a>
             <div class="nav" id="menu">
               <div class="nav__inner">
-                <a href="#home" class="nav__inner-link">Home</a>
-                <a href="#about-us" class="nav__inner-link">About us</a>
-                <a href="#services" class="nav__inner-link">services</a>
-                <a href="#projects" class="nav__inner-link">projects</a>
-                <a href="#testimonials" class="nav__inner-link">Testimonials</a>
-                <a href="#contact-us" class="nav__inner-link">contact us</a>
+                <div class="nav__inner-license">License NUMBER: 1111181</div>
+                <div class="nav__inner-links">
+                  <a href="#home" class="nav__inner-link">Home</a>
+                  <a href="#about-us" class="nav__inner-link">About us</a>
+                  <a href="#services" class="nav__inner-link">services</a>
+                  <a href="#projects" class="nav__inner-link">projects</a>
+                  <a href="#testimonials" class="nav__inner-link"
+                    >Testimonials</a
+                  >
+                  <a href="#contact-us" class="nav__inner-link">contact us</a>
+                </div>
               </div>
             </div>
             <button class="burger" id="menuBtn">
@@ -43,6 +48,7 @@
         </div>
       </header>
       <!-- #header end -->
+
       <!-- #hero -->
       <div class="anchor" id="home"></div>
       <section class="hero">
@@ -50,12 +56,16 @@
           <div class="hero__inner">
             <h1>PACIFIC WEST HOME BUILDERS</h1>
             <div class="hero__inner-group">
-              <button class="button button--primary">
+              <a href="tel:3108463047" class="button button--primary">
                 <span> Call Us </span>
-              </button>
-              <button class="button">
+              </a>
+              <a
+                href="https://calendly.com/pacificwestbuilders"
+                target="_blank"
+                class="button"
+              >
                 <span> Schedule Appointment </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -64,6 +74,7 @@
         </div>
       </section>
       <!-- #hero end -->
+
       <!-- #about start -->
       <div class="anchor" id="about-us"></div>
       <section class="about section section--ligt">
@@ -98,6 +109,7 @@
         </div>
       </section>
       <!-- #about end -->
+
       <!-- #service start -->
       <div class="anchor" id="services"></div>
       <section class="service section">
@@ -148,6 +160,7 @@
         </div>
       </section>
       <!-- #service end -->
+
       <!-- #projects start -->
       <div class="anchor" id="projects"></div>
       <section class="projects section section--ligt">
@@ -222,72 +235,52 @@
                 <div class="testimonials__item-content">
                   <img src="./images/icons/quote.svg" alt="quote-icon" />
                   <p>
-                    Jorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate libero et velit interdum, mattis.
+                    Pacific West Builders did an outstanding job on our kitchen
+                    remodel. The craftsmanship was top-notch. Highly
+                    recommended!
                   </p>
                 </div>
                 <div class="testimonials__item-info">
                   <strong>Cat C.</strong>
-                  <p>
-                    <i
-                      >Jorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.</i
-                    >
-                  </p>
                 </div>
               </div>
               <div class="testimonials__item">
                 <div class="testimonials__item-content">
                   <img src="./images/icons/quote.svg" alt="quote-icon" />
                   <p>
-                    Jorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate libero et velit interdum, mattis.
+                    Exceptional quality, on-time delivery, and transparent
+                    communication make Pacific west Builders our top choice.
+                    They're our favorite remodeling company by far.
                   </p>
                 </div>
                 <div class="testimonials__item-info">
-                  <strong>Cat C.</strong>
-                  <p>
-                    <i
-                      >Jorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.</i
-                    >
-                  </p>
+                  <strong>Allie M.</strong>
                 </div>
               </div>
               <div class="testimonials__item">
                 <div class="testimonials__item-content">
                   <img src="./images/icons/quote.svg" alt="quote-icon" />
                   <p>
-                    Jorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate libero et velit interdum, mattis.
+                    I can't express enough how thrilled we are with the addition
+                    to our home built by Pacific West Builders The team's
+                    professionalism and expertise are truly remarkable.
                   </p>
                 </div>
                 <div class="testimonials__item-info">
-                  <strong>Cat C.</strong>
-                  <p>
-                    <i
-                      >Jorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.</i
-                    >
-                  </p>
+                  <strong>Michael W.</strong>
                 </div>
               </div>
               <div class="testimonials__item">
                 <div class="testimonials__item-content">
                   <img src="./images/icons/quote.svg" alt="quote-icon" />
                   <p>
-                    Jorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate libero et velit interdum, mattis.
+                    Pacific West is the best in the west! Seriously! They really
+                    put attention to detail and their customer service goes
+                    above and beyond.
                   </p>
                 </div>
                 <div class="testimonials__item-info">
-                  <strong>Cat C.</strong>
-                  <p>
-                    <i
-                      >Jorem ipsum dolor sit amet, consectetur adipiscing
-                      elit.</i
-                    >
-                  </p>
+                  <strong>Diane S.</strong>
                 </div>
               </div>
             </div>
@@ -296,7 +289,7 @@
       </section>
       <!-- #testimonials end -->
       <!-- #footer -->
-      <div class="anchor" id="contact-us"></div>
+      <div class="anchor anchor--higher" id="contact-us"></div>
       <footer class="footer">
         <div class="autoContainer">
           <div class="footer__inner">
@@ -308,13 +301,15 @@
             <div class="footer__inner-links">
               <div class="footer__inner-links-column">
                 <strong>VISIT</strong>
-                <a href="#">Jorem ipsum</a>
-                <a href="#">Jorem ipsum</a>
-                <a href="#">Jorem ipsum</a>
+                <a href="https://calendly.com/pacificwestbuilders"
+                  >Schedule Consult</a
+                >
+                <a href="tel:3108463047">Call Us</a>
+                <a href="mailto:info@pacificwestbuilders.net">Email Us</a>
               </div>
               <div class="footer__inner-links-column">
                 <strong>CONTACT US</strong>
-                <a href="tel:+971 4 586 0800"
+                <a href="tel:3108463047"
                   ><svg
                     width="10"
                     height="10"
@@ -327,9 +322,9 @@
                       fill="currentColor"
                     />
                   </svg>
-                  +971 4 586 0800
+                  (310) 846-3047
                 </a>
-                <a href="mailto:info@erfcxzsdfgb">
+                <a href="mailto:info@pacificwestbuilders.net">
                   <svg
                     width="11"
                     height="9"
@@ -346,18 +341,18 @@
                       fill="currentColor"
                     />
                   </svg>
-                  info@erfcxzsdfgb
+                  info@pacificwestbuilders.net
                 </a>
               </div>
               <div class="footer__inner-links-column">
                 <strong>USEFUL LINKS</strong>
-                <a href="#">Portfolio</a>
-                <a href="#">Our services</a>
-                <a href="#">Contact us</a>
+                <a href="#about-us">About Us</a>
+                <a href="#projects">Portfolio</a>
+                <a href="#services">Our Services</a>
               </div>
               <div class="footer__inner-links-column">
                 <strong>STAY IN TOUCH</strong>
-                <a href="#">Facebook</a>
+                <a href="https://facebook.com/pacificwestbuilders">Facebook</a>
                 <a href="#">Instagram</a>
                 <a href="#">linkedin</a>
               </div>

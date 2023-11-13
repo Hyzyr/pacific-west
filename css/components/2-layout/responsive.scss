@@ -1,4 +1,5 @@
 @media (max-width: 1280px) {
+  @include header-1280;
   @include footer-1280;
 }
 @media (max-width: 1160px) {
@@ -27,6 +28,7 @@
     padding: 0 25px;
   }
   @include footer-940;
+  @include header-940;
   @include index-940;
 }
 @media (max-width: 768px) {
