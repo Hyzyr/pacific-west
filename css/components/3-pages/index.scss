@@ -280,7 +280,7 @@
             font-style: unset;
             font-size: 16px;
             font-weight: 300;
-            color: $white;
+            color: rgba($white, 0.5);
           }
           small {
             position: relative;
@@ -288,6 +288,7 @@
             margin: 0 auto;
             font-size: 16px;
             font-weight: 300;
+            color: rgba($white, 0.5);
             &::before {
               content: "";
               width: 4px;

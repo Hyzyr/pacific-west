@@ -1584,7 +1584,7 @@ svg {
   font-style: unset;
   font-size: 16px;
   font-weight: 300;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
 .testimonials--reviews .testimonials__item-info small {
   position: relative;
@@ -1592,6 +1592,7 @@ svg {
   margin: 0 auto;
   font-size: 16px;
   font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
 }
 .testimonials--reviews .testimonials__item-info small::before {
   content: "";
