@@ -10,9 +10,15 @@ h2 {
 h3 {
   font-size: 34px;
 }
+h3._sm {
+  font-size: 32px;
+}
 
 h4 {
   font-size: 26px;
+}
+h4._sm {
+  font-size: 24px;
 }
 
 h5 {
@@ -247,6 +253,35 @@ svg {
   border-radius: 0;
   border: 0;
   border-bottom: 1px solid #fff;
+}
+.input--border {
+  font-size: 14px;
+}
+.input--border input {
+  padding: 1.1em;
+  border: 1px solid #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+.input--border input::-webkit-input-placeholder {
+  color: #a7c4c6;
+}
+.input--border input::-moz-placeholder {
+  color: #a7c4c6;
+}
+.input--border input:-ms-input-placeholder {
+  color: #a7c4c6;
+}
+.input--border input::-ms-input-placeholder {
+  color: #a7c4c6;
+}
+.input--border input::placeholder {
+  color: #a7c4c6;
+}
+.input--border input:focus {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: #a7c4c6;
 }
 .input--select {
   position: relative;
@@ -768,6 +803,9 @@ svg {
   margin: 0 auto;
   padding: 0 60px;
 }
+.autoContainer._lg {
+  max-width: 1380px;
+}
 
 .box {
   display: -webkit-box;
@@ -970,6 +1008,26 @@ svg {
   bottom: -0.15em;
   height: 1em;
   width: auto;
+}
+.footer--sm .footer__inner {
+  padding: 35px 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+.footer--sm .footer__inner p {
+  font-size: 15px;
+  color: #e2f0f1;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.footer--sm .footer__inner-logo .logo {
+  font-size: 20px;
 }
 
 .header {
@@ -1422,6 +1480,225 @@ svg {
   font-size: 14px;
   line-height: 1.4;
 }
+.testimonials--reviews {
+  background: #fff;
+}
+.testimonials--reviews .testimonials__inner-row {
+  width: calc(100% + 60px);
+}
+.testimonials--reviews .testimonials__inner-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.testimonials--reviews .testimonials__inner-buttons .button {
+  font-size: 20px;
+  width: 3.1em;
+  height: 3.1em;
+  border-radius: 50%;
+  background: #ecefef;
+  padding: unset;
+}
+.testimonials--reviews .testimonials__inner-buttons .button:after {
+  display: none;
+}
+.testimonials--reviews .testimonials__inner-buttons .button .ico {
+  font-size: inherit;
+  width: 1.1em;
+  color: #3d5a5c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.testimonials--reviews .testimonials__inner-buttons .button .ico svg {
+  width: 100%;
+}
+.testimonials--reviews .testimonials__inner-buttons .button:hover {
+  border-color: #3d5a5c;
+}
+.testimonials--reviews .testimonials__item {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 30px 54px;
+  position: relative;
+  background: #1E1E1E;
+  margin: unset;
+}
+.testimonials--reviews .testimonials__item-ico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 38px;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+}
+.testimonials--reviews .testimonials__item-ico img {
+  width: 100%;
+}
+.testimonials--reviews .testimonials__item-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.testimonials--reviews .testimonials__item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.testimonials--reviews .testimonials__item-info strong {
+  font-weight: 500;
+  font-size: 18px;
+}
+.testimonials--reviews .testimonials__item-info p {
+  font-style: unset;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+.testimonials--reviews .testimonials__item-info small {
+  position: relative;
+  padding-left: 14px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+}
+.testimonials--reviews .testimonials__item-info small::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.testimonials--reviews h3 {
+  color: #000;
+  font-family: "Kaisei Decol", sans-serif;
+  margin-bottom: 40px;
+}
+
+.subscribe {
+  padding: 20px 0 48px;
+}
+.subscribe__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+.subscribe__inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+.subscribe__image {
+  width: calc(53% - 20px);
+  max-width: 630px;
+}
+.subscribe__image .ratioImage {
+  padding-bottom: 75%;
+}
+.subscribe__form {
+  width: calc(47% - 20px);
+  max-width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 75px;
+}
+.subscribe__form h4 {
+  font-family: "Kaisei Decol", sans-serif;
+  text-transform: uppercase;
+}
+.subscribe__form small {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+.subscribe__form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.subscribe__form-container .button--primary {
+  color: #3d5a5c;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  padding: 1em 2.28em;
+}
+.subscribe__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  width: 9em;
+  margin: 0 auto;
+}
+.subscribe__logo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 @media (max-width: 1280px) {
   .footer__inner-logo .logo {
@@ -1493,6 +1770,20 @@ svg {
   .testimonials__item {
     width: calc(25% - 16px);
     margin: 0 8px;
+  }
+  .testimonials--reviews .testimonials__inner-row {
+    width: calc(100% + 40px);
+  }
+  .subscribe__inner-row {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .subscribe__image .ratioImage {
+    height: 100%;
+  }
+  .subscribe__logo {
+    font-size: 18px;
   }
 }
 @media (min-width: 1025px) {
@@ -1634,6 +1925,12 @@ svg {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .subscribe__form {
+    gap: 50px;
+  }
+  .testimonials--reviews .testimonials__inner-row {
+    width: calc(100% + 30px);
+  }
 }
 @media (max-width: 940px) {
   .autoContainer {
@@ -1682,6 +1979,15 @@ svg {
   .footer__inner-form-content .button {
     width: 100%;
   }
+  .footer--sm .footer__inner {
+    gap: 30px;
+  }
+  .footer--sm .footer__inner-logo {
+    margin-right: auto;
+  }
+  .footer--sm .footer__inner-logo .logo {
+    font-size: 18px;
+  }
   .about__inner-row {
     gap: 25px;
     -webkit-box-orient: vertical;
@@ -1714,6 +2020,25 @@ svg {
   .testimonials__item {
     width: calc(50% - 16px);
   }
+  .testimonials--reviews .testimonials__inner-row {
+    width: calc(100% + 25px);
+  }
+  .testimonials--reviews .testimonials__item {
+    padding: 25px 40px;
+  }
+  .testimonials--reviews .testimonials__item-ico {
+    width: 30px;
+  }
+  .subscribe__inner-row {
+    gap: 20px;
+  }
+  .subscribe__image {
+    width: calc(53% - 10px);
+  }
+  .subscribe__form {
+    gap: 30px;
+    width: calc(47% - 10px);
+  }
 }
 @media (max-width: 768px) {
   .autoContainer {
@@ -1733,6 +2058,9 @@ svg {
   }
   h4 {
     font-size: 24px;
+  }
+  h4._sm {
+    font-size: 22px;
   }
   h5 {
     font-size: 18px;
@@ -1787,6 +2115,30 @@ svg {
     margin-top: 80px;
     height: calc(100vh - 80px);
     height: calc(100dvh - 80px);
+  }
+  .subscribe__inner-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  .subscribe__image {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .subscribe__form {
+    gap: 20px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .testimonials--reviews .testimonials__inner-row {
+    width: calc(100% + 15px);
   }
 }
 @media (max-width: 580px) {
@@ -1846,6 +2198,27 @@ svg {
   }
   .testimonials__item {
     width: 100%;
+  }
+  .testimonials--reviews h3 {
+    margin-bottom: 20px;
+  }
+  .testimonials--reviews .testimonials__inner-buttons .button {
+    font-size: 18px;
+  }
+  .testimonials--reviews .testimonials__item-info p {
+    font-size: 14px;
+  }
+  .testimonials--reviews .testimonials__item-info small {
+    font-size: 14px;
+  }
+  .testimonials--reviews .testimonials__item-info strong {
+    font-size: 15px;
+  }
+  .subscribe__inner {
+    gap: 30px;
+  }
+  .subscribe__logo {
+    font-size: 16px;
   }
 }
 @media (max-width: 460px) {

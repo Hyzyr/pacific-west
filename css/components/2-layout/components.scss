@@ -58,6 +58,23 @@
       border-bottom: 1px solid $white;
     }
   }
+  &--border {
+    font-size: 14px;
+    input {
+      padding: 1.1em;
+      border: 1px solid $white;
+      font-family: $font-roboto;
+      font-weight: 300;
+      color: $white;
+      &::placeholder {
+        color: $blue;
+      }
+      &:focus {
+        color: rgba($white, 0.8);
+        border-color: $blue;
+      }
+    }
+  }
   &--select {
     position: relative;
     min-width: 130px;
