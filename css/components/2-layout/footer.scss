@@ -111,9 +111,6 @@
     }
   }
   &__copyright {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
     padding: 15px 0 30px 0;
 
     color: $black-3;
@@ -124,12 +121,20 @@
     line-height: 1.5;
 
     ._ico {
+      padding: 0 0.3em;
+
       img {
         position: relative;
         bottom: -0.15em;
         height: 1em;
         width: auto;
       }
+    }
+    br {
+      display: none;
+    }
+    &._center {
+      text-align: center;
     }
   }
   &--sm {
@@ -256,6 +261,11 @@
             width: 100%;
           }
         }
+      }
+    }
+    &__copyright {
+      br {
+        display: unset;
       }
     }
   }

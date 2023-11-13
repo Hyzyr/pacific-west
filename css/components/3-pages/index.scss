@@ -215,7 +215,7 @@
         &-buttons {
           display: flex;
           gap: 30px;
-          justify-content: flex-end;
+          justify-content: space-between;
           .button {
             font-size: 20px;
             width: 3.1em;
@@ -223,22 +223,76 @@
             border-radius: 50%;
             background: $gray-2;
             padding: unset;
+
             &:after {
               display: none;
             }
             .ico {
+              position: relative;
               font-size: inherit;
-              width: 1.1em;
+              width: 0.7em;
+              height: 0.7em;
               color: $green;
               display: flex;
-              align-items: center;
-              justify-content: center;
+
               svg {
-                width: 100%;
+                display: none;
+              }
+              &:after {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 50%;
+                width: 60%;
+                height: 60%;
+                transform: translate(-50%, -50%) rotate(45deg);
+              }
+              &::before {
+                position: absolute;
+                content: "";
+                top: 50%;
+                right: 0;
+                width: 7em;
+                height: 2px;
+                background: currentColor;
+                transition: 0.2s ease;
+                transform: translate(0%, -50%);
               }
             }
             &:hover {
-              border-color: $green;
+              background: rgba($green, 0.2);
+            }
+            &:active {
+              background: rgba($green, 0.4);
+              .ico {
+                &::before {
+                  width: 6em;
+                }
+              }
+            }
+            &.swiper-button-disabled {
+              opacity: 0 !important;
+              pointer-events: none !important ;
+            }
+            &.swiper-arrow-next {
+              .ico {
+                &:after {
+                  border-top: 2px solid currentColor;
+                  border-right: 2px solid currentColor;
+                }
+              }
+            }
+            &.swiper-arrow-prev {
+              .ico {
+                &:after {
+                  border-bottom: 2px solid currentColor;
+                  border-left: 2px solid currentColor;
+                }
+                &::before {
+                  right: unset;
+                  left: 0;
+                }
+              }
             }
           }
         }
@@ -276,7 +330,7 @@
             font-weight: 500;
             font-size: 18px;
           }
-          
+
           p {
             font-style: unset;
             font-size: 16px;
@@ -357,6 +411,19 @@
           font-weight: 700;
           font-family: $font-roboto;
           padding: 1em 2.28em;
+        }
+      }
+    }
+    .input--border {
+      input {
+        border: 1px solid rgba($white, 0.5);
+        color: rgba($white, 0.85);
+        &::placeholder {
+          color: $blue;
+        }
+        &:focus {
+          color: rgba($white, 0.8);
+          border-color: $blue;
         }
       }
     }
@@ -586,6 +653,22 @@
         &__inner {
           &-row {
             width: calc(100% + 15px);
+          }
+          &-buttons {
+            .button {
+              .ico {
+                &::before {
+                  width: 5em;
+                }
+              }
+              &:active {
+                .ico {
+                  &::before {
+                    width: 4em;
+                  }
+                }
+              }
+            }
           }
         }
       }
