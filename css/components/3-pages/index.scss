@@ -854,8 +854,8 @@
     height: calc(100vh - 65px);
     height: calc(100dvh - 65px);
     &--lg {
-      min-height: calc(100vh - 65px);
-      min-height: calc(100dvh - 65px);
+      min-height: 90vh;
+      min-height: 90dvh;
     }
   }
   .service {
