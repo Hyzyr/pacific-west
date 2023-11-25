@@ -7,7 +7,6 @@
   flex-direction: column;
   padding: 40px 0 140px;
   margin-top: 115px;
-
   &__inner {
     display: flex;
     flex-direction: column;
@@ -30,6 +29,51 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+  }
+  &--lg {
+    margin-top: unset !important;
+    padding: 60px 0 300px;
+    height: auto !important;
+    min-height: calc(100vh - 115px);
+    min-height: calc(100dvh - 115px);
+    .hero {
+      &__inner {
+        margin: unset;
+        text-align: center;
+        gap: 38px;
+        padding-top: 5vh;
+        &-header {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+      }
+      &__text {
+        font-family: $font-title;
+        font-size: 28px;
+        font-weight: 400;
+        color: $black;
+        text-transform: uppercase;
+        line-height: 1.4;
+      }
+    }
+    h2 {
+      color: $black;
+      font-family: $font-title;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    p {
+      max-width: 680px;
+      color: $black;
+      font-family: $font-secondary;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin: 0 auto;
+    }
+    .bg {
+      opacity: 1;
+    }
   }
 }
 .about {
@@ -447,6 +491,18 @@
     margin-top: 100px;
     height: calc(100vh - 100px);
     height: calc(100dvh - 100px);
+    &--lg {
+      min-height: calc(100vh - 100px);
+      min-height: calc(100dvh - 100px);
+      .hero {
+        &__inner {
+          padding-top: unset;
+        }
+        &__text {
+          font-size: 26px;
+        }
+      }
+    }
   }
   .about {
     &__inner {
@@ -529,6 +585,18 @@
     margin-top: 85px;
     height: calc(100vh - 85px);
     height: calc(100dvh - 85px);
+    &--lg {
+      min-height: calc(100vh - 85px);
+      min-height: calc(100dvh - 85px);
+      .hero {
+        &__inner {
+          gap: 30px;
+        }
+        &__text {
+          font-size: 24px;
+        }
+      }
+    }
   }
   .flyer {
     &__inner {
@@ -626,6 +694,18 @@
     margin-top: 80px;
     height: calc(100vh - 80px);
     height: calc(100dvh - 80px);
+    &--lg {
+      min-height: calc(100vh - 80px);
+      min-height: calc(100dvh - 80px);
+      .hero {
+        &__text {
+          font-size: 22px;
+        }
+      }
+      h2 {
+        font-size: 30px;
+      }
+    }
   }
   .subscribe {
     &__inner {
@@ -681,6 +761,13 @@
       &-group {
         flex-direction: column-reverse;
         align-items: center;
+      }
+    }
+    &--lg {
+      .hero {
+        &__text {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -766,6 +853,10 @@
     margin-top: 65px;
     height: calc(100vh - 65px);
     height: calc(100dvh - 65px);
+    &--lg {
+      min-height: calc(100vh - 65px);
+      min-height: calc(100dvh - 65px);
+    }
   }
   .service {
     &__inner {
