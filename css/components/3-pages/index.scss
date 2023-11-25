@@ -761,6 +761,12 @@
       &-group {
         flex-direction: column-reverse;
         align-items: center;
+        margin: 0 auto;
+        gap: 10px;
+        .button {
+          width: 100%;
+          text-align: center;
+        }
       }
     }
     &--lg {
