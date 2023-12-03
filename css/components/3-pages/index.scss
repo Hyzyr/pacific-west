@@ -507,6 +507,15 @@
   }
 }
 
+@mixin index-1280 {
+  .service {
+    .box {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
 @mixin index-1160 {
   .hero {
     margin-top: 100px;
@@ -552,6 +561,9 @@
         width: calc(75% - 10px);
         padding-bottom: 2em;
       }
+    }
+    .box {
+      max-width: 750px;
     }
   }
   .projects {
@@ -772,6 +784,13 @@
             }
           }
         }
+      }
+    }
+  }
+  .service {
+    .box {
+      p {
+        font-size: 16px;
       }
     }
   }
