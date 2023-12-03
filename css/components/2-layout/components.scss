@@ -13,7 +13,6 @@
     border-bottom: 2px solid $black-2;
     resize: none;
     transition: 0.3s ease-out;
-
     //font
     color: $white;
     font-family: $font-primary;
@@ -29,7 +28,7 @@
   }
   input:focus,
   textarea:focus {
-    color: $black-primary;
+    color: $white;
     border-color: rgba($white, 0.8);
     &::placeholder {
       color: rgba($white, 0.4);

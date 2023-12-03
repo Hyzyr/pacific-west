@@ -23,12 +23,7 @@
   }
   h1 {
     text-align: center;
-    margin-bottom: 0.9em;
-  }
-  .autoContainer {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    margin-bottom: 1.45em;
   }
   &--lg {
     margin-top: unset !important;
@@ -74,6 +69,61 @@
     .bg {
       opacity: 1;
     }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    &-container {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    &-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    &-box {
+      display: flex;
+      gap: 18px;
+    }
+    .input {
+      width: calc(30% - 10px);
+      &:last-child {
+        width: calc(40% - 10px);
+        max-width: 266px;
+      }
+      max-width: 166px;
+      input {
+        background-color: unset;
+        border-color: $white;
+        border-width: 1px;
+        &:focus {
+          border-color: rgba($white, 0.6);
+        }
+      }
+    }
+    .button {
+      font-weight: 300;
+    }
+    h5 {
+      font-weight: 400;
+      font-family: $font-secondary;
+    }
+  }
+  .autoContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
 }
 .about {
@@ -706,6 +756,21 @@
         font-size: 30px;
       }
     }
+    &__form {
+      &-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &-group {
+        flex-direction: column;
+        gap: 20px;
+      }
+      &-box {
+        .button {
+          width: calc(50% - 10px);
+        }
+      }
+    }
   }
   .subscribe {
     &__inner {
@@ -773,6 +838,25 @@
       .hero {
         &__text {
           font-size: 20px;
+        }
+      }
+    }
+    &__form {
+      &-container {
+        flex-direction: column;
+        .input {
+          max-width: unset;
+          width: 100%;
+          &:last-child {
+            width: 100%;
+            max-width: unset;
+          }
+        }
+      }
+      &-box {
+        flex-direction: column;
+        .button {
+          width: 100%;
         }
       }
     }
