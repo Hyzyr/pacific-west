@@ -244,6 +244,7 @@
   }
 }
 .testimonials {
+  padding-bottom: 35px;
   &__inner {
     display: flex;
     flex-direction: column;
@@ -252,6 +253,26 @@
     &-row {
       display: flex;
       margin: 0 -13px;
+    }
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1em;
+      gap: 10px;
+
+      span {
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-right: 0.5em;
+      }
+      .socialButton {
+        width: auto;
+        height: 2.4em;
+      }
     }
   }
   &__item {
@@ -536,6 +557,15 @@
   }
 }
 
+@mixin index-1280 {
+  .service {
+    .box {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
 @mixin index-1160 {
   .hero {
     margin-top: 100px;
@@ -581,6 +611,9 @@
         width: calc(75% - 10px);
         padding-bottom: 2em;
       }
+    }
+    .box {
+      max-width: 750px;
     }
   }
   .projects {
@@ -816,6 +849,13 @@
             }
           }
         }
+      }
+    }
+  }
+  .service {
+    .box {
+      p {
+        font-size: 16px;
       }
     }
   }
